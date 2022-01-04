@@ -179,9 +179,22 @@ a {
   background: #f3f9fa;
   border-radius: 100%;
   display: inline-flex;
-  height: 64px;
+  height: 56px;
   justify-content: center;
-  width: 64px;
+  width: 56px;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon--small {
+  height: 28px;
+  width: 28px;
 }
 
 /* Buttons */
@@ -455,3 +468,34 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 } */
+
+/* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 2.6rem;
+  right: -28px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+}
+
+.testimonial .quote {
+  margin-left: 6rem;
+}
